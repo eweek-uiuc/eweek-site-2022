@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Caribbean";
-  src: url("./Caribbean.ttf") format("truetype");
+  font-family: "Dionysus";
+  src: url("./Dionysus.ttf") format("truetype");
 }
 
 @font-face {
@@ -19,11 +19,11 @@ html {
 }
 
 .title-1 {
-  font-family: "Caribbean" !important;
+  font-family: "Dionysus" !important;
 }
 
 .title-2 {
-  font-family: "Caribbean" !important;
+  font-family: "Dionysus" !important;
 }
 
 #grad {
@@ -126,6 +126,7 @@ html {
     background-repeat: no-repeat;
     background-size: 100%;
   }
+}
 
 
 /* .Profile h1{
