@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Caribbean";
+  src: url("./Caribbean.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./Gilroy-Medium.ttf") format("truetype");
+}
+
+html {
+  background-color: #B94619; /*2022 is #ebe4d1*/
+}
+
+.main {
+  position: relative;
+  width: 60%;
+  font-family: "Gilroy-Medium" !important;
+}
+
+.title-1 {
+  font-family: "Caribbean" !important;
+}
+
+.title-2 {
+  font-family: "Caribbean" !important;
+}
+
+#grad {
+  display: block;
+  position: absolute;
+  z-index: -999;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100vh;
+  background-image: url(grad_corner.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#ship {
+  display: block;
+  position: absolute;
+  z-index: -998;
+  top: 20px;
+  right: -200px;
+  width: 30vw;
+  height: 80vh !important;
+  background-image: url(ship.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#waves {
+  display: block;
+  opacity: 0.95;
+  position: absolute;
+  z-index: -999;
+  bottom: -450px;
+  right: 0;
+  width: 100%;
+  height: 100% !important;
+  background-image: url(waves.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  background-image: url(logo.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.button {
+  /* Rectangle 3 */
+
+  background: #ebe4d1;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 0px #000000;
+  border-radius: 100px;
+}
+
+/* For Mobile */
+@media screen and (max-width: 640px) {
+  .main {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #ship {
+    display: none;
+    position: absolute;
+    z-index: -998;
+    top: 20px;
+    right: 0px;
+    width: 30vw;
+    height: 80vh !important;
+    background-image: url(ship.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #grad {
+    position: absolute;
+    z-index: -999;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(grad_corner.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  #ship {
+    position: absolute;
+    z-index: -998;
+    top: 20px;
+    right: -200px;
+    width: 30vw;
+    height: 80vh !important;
+    background-image: url(ship.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+
+/* .Profile h1{
+    position: relative;
+    color: white;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin: 0;
+    padding: 0;
+    background-color: red;
+} */ 
+
+/* For Mobile */
+@media screen and (max-width: 640px) {
+    .main {
+        width: 90%;
+    }
+  #waves {
+    display: block;
+    opacity: 0.95;
+    position: absolute;
+    z-index: -999;
+    bottom: -600px;
+    right: 0;
+    width: 200%;
+    height: 100% !important;
+    background-image: url(waves.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.sponsorlogo {
+    display: block;
+    margin: auto;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+/* .sponsorcontainer {
+    display: block;
+    margin: auto;
+    transform: translate(40px, 0px);
+    display: inline-flex;
+    flex-direction: column;
+} */
+
+/* For Tablets */
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .main {
+    width: 500px;
+  }
+}
