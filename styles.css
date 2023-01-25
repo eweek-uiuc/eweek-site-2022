@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Dionysus";
-  src: url("./Dionysus.ttf") format("truetype");
+  font-family: "Caribbean";
+  src: url("./Caribbean.ttf") format("truetype");
 }
 
 @font-face {
@@ -16,18 +16,33 @@ html {
   position: relative;
   width: 60%;
   font-family: "Gilroy-Medium" !important;
+  color: #000000;
 }
 
 .title-1 {
-  font-family: "Dionysus" !important;
+  font-family: "Caribbean" !important;
+  color: #000000;
 }
 
 .title-2 {
-  font-family: "Dionysus" !important;
+  font-family: "Caribbean" !important;
+  color: #FFFFFF;
 }
 
+#grad {
+  display: block;
+  position: absolute;
+  z-index: -999;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100vh;
+  background-image: url(grad_corner.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
-#column {
+#ship {
   display: block;
   position: absolute;
   z-index: -998;
@@ -35,12 +50,12 @@ html {
   right: -200px;
   width: 30vw;
   height: 80vh !important;
-  background-image: url(column.svg);
+  background-image: url(ship.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-#linegreek {
+#waves {
   display: block;
   opacity: 0.95;
   position: absolute;
@@ -49,7 +64,7 @@ html {
   right: 0;
   width: 100%;
   height: 100% !important;
-  background-image: url(linegreek.svg);
+  background-image: url(waves.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -65,7 +80,7 @@ html {
 .button {
   /* Rectangle 3 */
 
-  background: #ebe4d1;
+  background: #FFFFFF;
   border: 2px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 0px #000000;
@@ -79,7 +94,7 @@ html {
     margin-left: 20px;
     margin-right: 20px;
   }
-  #column {
+  #ship {
     display: none;
     position: absolute;
     z-index: -998;
@@ -87,24 +102,33 @@ html {
     right: 0px;
     width: 30vw;
     height: 80vh !important;
-    background-image: url(column.svg);
+    background-image: url(ship.svg);
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  
+  #grad {
+    position: absolute;
+    z-index: -999;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(grad_corner.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 
-  #column {
+  #ship {
     position: absolute;
     z-index: -998;
     top: 20px;
     right: -200px;
     width: 30vw;
     height: 80vh !important;
-    background-image: url(column.svg);
+    background-image: url(ship.svg);
     background-repeat: no-repeat;
     background-size: 100%;
   }
-}
 
 
 /* .Profile h1{
